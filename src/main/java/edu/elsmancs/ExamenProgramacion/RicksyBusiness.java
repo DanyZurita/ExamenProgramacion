@@ -51,7 +51,7 @@ public class RicksyBusiness {
          * de los que estén libres.
          * El coste del ovni es de 500 EZIs.
          */
-
+/*
         UfosPark ufosPark = new UfosPark();
 
         // Da de alta en la flota de ovnis 2 UFOS.
@@ -131,7 +131,7 @@ public class RicksyBusiness {
          * Indica el numero de unidades y el coste de cada
          * uno de ellos, que es de 50 EZIs
          */
-
+/*
         CrystalExpender packExpender = new CrystalExpender(3, 50);
 
         // Muestra el total de packs y su precio unidad
@@ -164,7 +164,7 @@ public class RicksyBusiness {
          * y registra (añade) los componentes UfosPark
          * y CrystalDispatcher al receptivo
          */
-
+/*
         Receptivo receptivo = new Receptivo();
         receptivo.registra(packExpender);
         receptivo.registra(ufosPark);
@@ -174,7 +174,7 @@ public class RicksyBusiness {
         // y a CrystalExpender.dispatch()
 
         // Squanchy reserva ovni (ya tiene) y pack
-
+*/ /*
         System.out.println("\nLLega Squanchy!\n" + 
                              "===============");
         receptivo.dispatch(squanchy);
@@ -204,7 +204,7 @@ public class RicksyBusiness {
         morty = new CreditCard("Morty", "0000000000000000");
         receptivo.dispatch(morty);
         mostrarReserva(morty, packExpender, ufosPark);
-        
+*/ /*        
 
         /**
          * A por el 10!! 
@@ -220,12 +220,14 @@ public class RicksyBusiness {
          * invitados/as que han hecho un pedido.
          */
 
-         // tu código aquí
+/*         // tu código aquí
     }
-
+*/ /*
     private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
         System.out.println(card);
         System.out.println("Packs: " + expender.stock());
         System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
+*/    
     }
+    
 }
