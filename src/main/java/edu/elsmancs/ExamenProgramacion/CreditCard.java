@@ -19,8 +19,13 @@ public class CreditCard {
         return payable;
     }
     
+    String number() {
+        return this.number;
+    }
+            
     double credit() {
         return this.credit;
     }
+    
     
 }
