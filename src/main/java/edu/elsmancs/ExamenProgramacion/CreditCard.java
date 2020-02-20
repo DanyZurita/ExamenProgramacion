@@ -3,13 +3,16 @@ package edu.elsmancs.ExamenProgramacion;
 public class CreditCard {
     private final String owner;
     private final String number;
-    private double credit = 0d;
-    private String SYMBOL = null;
+    private double credit = 3000.0;
+    private String SYMBOL = "EZIS";
     
     public CreditCard(String owner, String number) {
         this.owner = owner;
         this.number = number;
     }
     
+    double credit() {
+        return this.credit;
+    }
     
 }

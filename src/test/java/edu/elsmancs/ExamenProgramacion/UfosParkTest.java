@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 public class UfosParkTest {
 
-    UfosPark ufos = null;
+    /* UfosPark ufos = null;
     String[] ovnis = { "unx", "dox", "trex" };
 
     /**
