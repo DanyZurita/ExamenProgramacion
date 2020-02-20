@@ -10,17 +10,23 @@ public class UfosPark {
     public UfosPark() {}
     
     public void add(String ufo) {
-        this.flota.putIfAbsent(ufo, "libre");
+        this.flota.putIfAbsent(ufo, ufo);
     }
     
     void dispatch(CreditCard cc) {
         cc.pay(fee);
-        for (String ovni : flota.keySet()) {
-            if (flota.get(ovni).equals("libre")) {
-                flota.put(ovni, cc.number());
+        for (String ufo : flota.keySet()) {
+            if (flota.get(ufo).equals(ufo)) {
+                flota.put(cc.number(), ufo);
                 break;
             }
         }
         
     }
+    
+    String getUfoOf(String owner) {
+        return flota.get(owner);
+            
+    } 
+    
 }
