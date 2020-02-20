@@ -4,7 +4,7 @@ apply plugin: 'application'
 
     group = 'edu.elsmancs'
 
-mainClassName = 'edu.elsmancs.ExamenProgramacion.Main'
+mainClassName = 'edu.elsmancs.ExamenProgramacion.RicksyBusiness'
 
 repositories {
     jcenter()
