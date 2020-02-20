@@ -19,7 +19,7 @@ public class UfosPark {
             cc.pay(fee);
             for (String ufo : flota.keySet()) {
                 if (this.flota.get(ufo).equals(ufo)) {
-                    this.flota.put(cc.number(), ufo);
+                    this.flota.compute(ufo, (k,v) -> v = cc.number());
                     assigned = true;
                     break;
                 }
@@ -29,13 +29,18 @@ public class UfosPark {
     
     String getUfoOf(String owner){
         try {
-            return this.flota.get(owner);
+            for (String ufo : flota.keySet()) {
+                if (flota.get(ufo).equals(owner))
+                    return ufo;
+            }
         }
         catch (Exception e) {
-            return "No existe";
         }
-        
-            
+        return null;
     } 
     
+    @Override
+    public String toString() {
+        return this.flota.keySet().toString();
+    }
 }
