@@ -11,4 +11,8 @@ public class UfosPark {
     public void add(String ufo) {
         this.flota.add(ufo);
     }
+    
+    void dispatch(CreditCard cc) {
+        cc.pay(fee);
+    }
 }
