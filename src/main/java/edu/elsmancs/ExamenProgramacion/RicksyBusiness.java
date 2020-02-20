@@ -51,7 +51,7 @@ public class RicksyBusiness {
          * de los que estén libres.
          * El coste del ovni es de 500 EZIs.
          */
-/*
+
         UfosPark ufosPark = new UfosPark();
 
         // Da de alta en la flota de ovnis 2 UFOS.
@@ -60,7 +60,7 @@ public class RicksyBusiness {
 		for (String ovni : ufosID) {
 			ufosPark.add(ovni);
         }
-        
+ /*       
         // Procesamos el pago y reserva de ovni de Abradolph
         ufosPark.dispatch(abradolph);
 

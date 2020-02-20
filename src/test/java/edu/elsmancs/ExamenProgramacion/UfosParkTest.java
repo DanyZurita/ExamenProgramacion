@@ -1,10 +1,11 @@
 package edu.elsmancs.ExamenProgramacion;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class UfosParkTest {
 
-    /* UfosPark ufos = null;
+    UfosPark ufos = null;
     String[] ovnis = { "unx", "dox", "trex" };
 
     /**
@@ -13,6 +14,11 @@ public class UfosParkTest {
      */
     @Test
     public void addUfoTest() {
+        ufos = new UfosPark();
+        for (String ovni : ovnis) {
+            ufos.add(ovni);
+        }
+        assertEquals(3, ufos.flota.size());
     }
 
     /**
