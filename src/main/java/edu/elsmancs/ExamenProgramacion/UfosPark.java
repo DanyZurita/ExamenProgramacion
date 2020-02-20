@@ -3,8 +3,8 @@ package edu.elsmancs.ExamenProgramacion;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UfosPark {
-    private double fee = 500.0;
+public class UfosPark implements GuestDispatcher {
+    private final double fee = 500.0;
     public Map<String, String> flota = new HashMap<String, String>();
     
     public UfosPark() {}
@@ -14,7 +14,9 @@ public class UfosPark {
     }
     
     boolean assigned = false;
-    void dispatch(CreditCard cc) {
+    
+    @Override
+    public void dispatch(CreditCard cc) {
         if (!assigned) {
             cc.pay(fee);
             for (String ufo : flota.keySet()) {

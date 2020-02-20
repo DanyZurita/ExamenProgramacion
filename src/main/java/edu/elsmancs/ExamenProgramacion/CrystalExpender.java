@@ -1,6 +1,6 @@
 package edu.elsmancs.ExamenProgramacion;
 
-public class CrystalExpender {
+public class CrystalExpender implements GuestDispatcher {
     private int stock = 0;
     private double itemCost = 0.0;
     
@@ -9,7 +9,8 @@ public class CrystalExpender {
         this.itemCost = itemCost;
     }
     
-    void dispatch(CreditCard cc) {
+    @Override
+    public void dispatch(CreditCard cc) {
         if (0 <= stock) {
             if (cc.pay(itemCost)) {
                 this.stock -= 1;
