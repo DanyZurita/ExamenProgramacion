@@ -12,7 +12,11 @@ public class CreditCard {
     }
    
     boolean pay(double pay) {
-        return this.credit >= pay;
+        boolean payable = this.credit >= pay;
+        if (payable) {
+            this.credit -= pay;
+        }
+        return payable;
     }
     
     double credit() {
