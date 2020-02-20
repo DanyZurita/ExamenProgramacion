@@ -12,4 +12,10 @@ public class Receptivo {
     void registra(GuestDispatcher dispatch) {
         servicios.add(dispatch);
     }
+    
+    void dispatch(CreditCard cc) {
+        for (GuestDispatcher dispatch : servicios) {
+            dispatch.dispatch(cc);
+        }
+    }
 }
