@@ -10,6 +10,10 @@ public class CreditCard {
         this.owner = owner;
         this.number = number;
     }
+   
+    boolean pay(double pay) {
+        return this.credit >= pay;
+    }
     
     double credit() {
         return this.credit;
