@@ -24,4 +24,8 @@ public class CrystalExpender implements GuestDispatcher {
         return "Stock: " + this.stock + '\n'
                 + "Cost: " + this.itemCost + '\n';
     }
+    
+    int stock() {
+        return this.stock;
+    }
 }
