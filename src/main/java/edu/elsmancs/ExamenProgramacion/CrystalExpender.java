@@ -18,9 +18,5 @@ public class CrystalExpender {
         
     }
     
-    @Override
-    public String toString() {
-        return "Stock: " + this.stock + '\n'
-                + "Cost: " + this.itemCost + '\n';
-    }
+    
 }
