@@ -10,21 +10,18 @@ public class UfosPark implements GuestDispatcher {
     public UfosPark() {}
     
     public void add(String ufo) {
-        this.flota.putIfAbsent(ufo, ufo);
+        this.flota.putIfAbsent(ufo, null);
     }
     
-    boolean assigned = false;
+    
     
     @Override
-    public void dispatch(CreditCard credit) {
-        if (!assigned) {
+    public void dispatch(CreditCard credit) {   
+    for (String ufo : flota.keySet()) {
+        if (this.flota.get(ufo) == null) {
             credit.pay(fee);
-            for (String ufo : flota.keySet()) {
-                if (this.flota.get(ufo).equals(ufo)) {
-                    this.flota.compute(ufo, (k,v) -> v = credit.number());
-                    assigned = true;
-                    break;
-                }
+            this.flota.compute(ufo, (k,v) -> v = credit.number());
+            break;
             }
         }
     }
