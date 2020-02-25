@@ -16,12 +16,12 @@ public class UfosPark implements GuestDispatcher {
     boolean assigned = false;
     
     @Override
-    public void dispatch(CreditCard cc) {
+    public void dispatch(CreditCard credit) {
         if (!assigned) {
-            cc.pay(fee);
+            credit.pay(fee);
             for (String ufo : flota.keySet()) {
                 if (this.flota.get(ufo).equals(ufo)) {
-                    this.flota.compute(ufo, (k,v) -> v = cc.number());
+                    this.flota.compute(ufo, (k,v) -> v = credit.number());
                     assigned = true;
                     break;
                 }
@@ -30,13 +30,10 @@ public class UfosPark implements GuestDispatcher {
     }
     
     String getUfoOf(String owner){
-        try {
-            for (String ufo : flota.keySet()) {
-                if (flota.get(ufo).equals(owner))
-                    return ufo;
+        for (String ufo : flota.keySet()) {
+            if (flota.get(ufo).equals(owner)){
+                return ufo;
             }
-        }
-        catch (Exception e) {
         }
         return null;
     } 
