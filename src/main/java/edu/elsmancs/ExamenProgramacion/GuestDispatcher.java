@@ -1,8 +1,8 @@
 package edu.elsmancs.ExamenProgramacion;
 
 
-public interface GuestDispatcher {
+ interface GuestDispatcher {
     
-    public void dispatch(CreditCard cc);
+    public void dispatch(CreditCard credit);
     
 }
