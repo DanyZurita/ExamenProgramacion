@@ -14,8 +14,9 @@ public class CreditCard {
     boolean pay(double pay) {
         if (this.credit >= pay) {
             this.credit -= pay;
+            return true;
         }
-        return this.credit >= pay;
+        return false;
     }
     
     String number() {
