@@ -35,7 +35,7 @@ public class CreditCard {
     
     @Override
     public String toString() {
-        return "owner: " + this.owner + '\n'
+        return "owner: " + owner() + '\n'
                 + "number: " + number() + '\n'
                  + "credit: " + credit() + " " + this.SYMBOL + '\n';
     }
