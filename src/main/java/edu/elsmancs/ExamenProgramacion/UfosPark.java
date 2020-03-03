@@ -36,7 +36,7 @@ public class UfosPark implements GuestDispatcher {
         String ufoID = null;
         if (flota.containsValue(owner)) {
             for (Map.Entry<String, String> entry: flota.entrySet()) {
-                if (entry.getValue().equals(owner)) {
+                if (entry.getValue() == owner) {
                     ufoID = entry.getKey();
                     break;
                 }
