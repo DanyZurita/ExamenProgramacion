@@ -6,7 +6,7 @@ public class CreditCard {
     private double credit = 3000.0;
     private String SYMBOL = "EZIS";
     
-    public CreditCard(String owner, String number) {
+    CreditCard(String owner, String number) {
         this.owner = owner;
         this.number = number;
     }
