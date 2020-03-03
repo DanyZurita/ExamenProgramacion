@@ -11,7 +11,7 @@ public class Receptivo {
     public Receptivo() {}
     
     void registra(GuestDispatcher dispatch) {
-        servicios.add(dispatch);
+        observers.add(dispatch);
     }
     
     void dispatch(CreditCard cc) {
