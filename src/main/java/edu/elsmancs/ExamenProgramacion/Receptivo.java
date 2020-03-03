@@ -1,11 +1,12 @@
 package edu.elsmancs.ExamenProgramacion;
 
-import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 public class Receptivo {
     
-    private ArrayList<GuestDispatcher> servicios = new ArrayList<>();
+    private Set<GuestDispatcher> observers = new LinkedHashSet<>();
     
     public Receptivo() {}
     
