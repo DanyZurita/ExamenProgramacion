@@ -19,4 +19,9 @@ public class RickMenuDispatcher implements GuestDispatcher{
         }
     }
     
+    @Override
+    public String toString() {
+        return "Stock = " + stock + "\n"
+                + "Orders = " + orders.toString();
+    }
 }
