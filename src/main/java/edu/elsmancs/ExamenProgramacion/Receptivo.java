@@ -14,9 +14,9 @@ public class Receptivo {
         observers.add(dispatch);
     }
     
-    void dispatch(CreditCard cc) {
-        for (GuestDispatcher dispatch : servicios) {
-            dispatch.dispatch(cc);
+    void dispatch(CreditCard credit) {
+        for (GuestDispatcher dispatch : observers) {
+            dispatch.dispatch(credit);
         }
     }
 }
