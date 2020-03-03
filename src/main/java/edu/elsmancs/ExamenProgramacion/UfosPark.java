@@ -9,7 +9,7 @@ public class UfosPark implements GuestDispatcher {
     
     UfosPark() {}
     
-    public void add(String ufo) {
+    void add(String ufo) {
         this.flota.putIfAbsent(ufo, null);
     }
     
