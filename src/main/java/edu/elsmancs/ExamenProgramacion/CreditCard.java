@@ -16,7 +16,9 @@ public class CreditCard {
             this.credit -= pay;
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
     
     String number() {
