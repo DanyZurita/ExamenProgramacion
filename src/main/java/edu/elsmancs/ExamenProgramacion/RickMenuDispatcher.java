@@ -9,5 +9,5 @@ public class RickMenuDispatcher {
    private double menuCost = 10.0;
    private final List<String> orders = new ArrayList<>();
    
-   
+   RickMenuDispatcher() {};
 }
