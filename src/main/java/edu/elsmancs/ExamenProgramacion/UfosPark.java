@@ -17,17 +17,20 @@ public class UfosPark implements GuestDispatcher {
     
     @Override
     public void dispatch(CreditCard credit) {   
-        for (String ufo : flota.keySet()) {
-            if (this.flota.get(ufo) == null) {
-                if (!flota.containsValue(credit)){
-                    if (credit.pay(fee)){
-                        flota.put(ufo, credit);
-                        break;
-                    }
+        Map.Entry<String, String> ufo = null;
+
+        if (!flota.containsValue(credit.number())) {
+            for (Map.Entry<String, String> entry : this.flota.entrySet()) {
+                if (entry.getValue() == null) {
+                    ufo = entry;
+                    break;
                 }
             }
         }
-    }
+        if (ufo != null  && credit.pay(fee)) {
+            this.flota.put(ufo.getKey(), credit.number());
+        }
+    }  
     
     String getUfoOf(String owner){
         String ufoID = null;
