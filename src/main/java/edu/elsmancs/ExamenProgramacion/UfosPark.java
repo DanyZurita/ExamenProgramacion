@@ -72,7 +72,8 @@ public class UfosPark implements GuestDispatcher {
      * para pagar la fee.
      * 
      * Si cumple dichas condiciones se le cobrará la fee
-     * y se asociará al primer conductor disponible.
+     * y se asociará al primer conductor disponible añadiendo
+     * su nombre junto con el de su conductor.
      * 
      * @param CreditCard El objeto CreditCard del cliente
      * @return void
