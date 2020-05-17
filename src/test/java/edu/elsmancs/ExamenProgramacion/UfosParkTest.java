@@ -18,7 +18,7 @@ public class UfosParkTest {
         for (String ovni : ovnis) {
             ufos.add(ovni);
         }
-        assertEquals(3, ufos.flota.size());
+        assertEquals("[trex, dox, unx]", ufos.toString());
     }
 
     /**
@@ -28,7 +28,7 @@ public class UfosParkTest {
      * El crédito de la tarjeta varía.
      */
     @Test
-    public void dispatchTest() {git pul
+    public void dispatchTest() {
     }
 
     /**
