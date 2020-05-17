@@ -33,7 +33,7 @@ public class UfosPark implements GuestDispatcher {
     private final Map<String, String> flota = new HashMap<>();
     
     /**
-     * Contructor por defecto
+     * Contructor UfosPark
      * 
      * Constructor vacio para que 
      * se utilice el constructor por
