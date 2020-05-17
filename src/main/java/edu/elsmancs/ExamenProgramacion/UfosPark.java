@@ -103,8 +103,8 @@ public class UfosPark implements GuestDispatcher {
      * Si lo hace, se devuelve el valor de su UFO
      * asociado; si no, se devuelve null.
      * 
-     * @param String Nombre del owner
-     * @return String Devuleve UFO o null 
+     * @param String Nombre del owner cliente
+     * @return String Devuleve nombre del UFO o null 
      */
     String getUfoOf(String owner){
         String ufoID = null;
