@@ -47,8 +47,6 @@ public class CrystalExpender implements GuestDispatcher {
      * - Que el cliente pueda permitirse pagar el itemCost.
      * 
      * De ser así, se cobra y el stock del producto baja en 1.
-     * 
-     * @return void
      */
     @Override
     public void dispatch(CreditCard credit) {

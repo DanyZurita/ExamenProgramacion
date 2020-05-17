@@ -41,8 +41,6 @@ public class RickMenuDispatcher implements GuestDispatcher{
      * 
      * De ser así, se cobra y el stock del producto baja en 1
      * y se añade el nombre del owner a la coleccion orders.
-     * 
-     * @return void
      */
    @Override
     public void dispatch(CreditCard credit) {

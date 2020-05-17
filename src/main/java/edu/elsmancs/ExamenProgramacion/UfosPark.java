@@ -75,8 +75,7 @@ public class UfosPark implements GuestDispatcher {
      * y se asociará al primer conductor disponible añadiendo
      * su nombre junto con el de su conductor.
      * 
-     * @param CreditCard El objeto CreditCard del cliente
-     * @return void
+     * @param credit El objeto CreditCard del cliente
      */
     @Override
     public void dispatch(CreditCard credit) {   
