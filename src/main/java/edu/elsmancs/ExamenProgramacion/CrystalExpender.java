@@ -44,8 +44,9 @@ public class CrystalExpender implements GuestDispatcher {
      * 
      * - Que el stock del item sea mayor que 0.
      * 
-     * - Que dentro de la colección de UFOs quede alguno
-     * disponible (sin cliente asociado).
+     * - Que el cliente pueda permitirse pagar el itemCost.
+     * 
+     * De ser así, se cobra y el stock del producto baja en 1.
      * 
      * @return void
      */
